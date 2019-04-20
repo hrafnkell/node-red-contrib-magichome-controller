@@ -195,7 +195,15 @@ module.exports = function (RED) {
         let light = new MagicHomeControl(host);
 
         function setState(value) {
-
+            if (value == 'toggle')
+            {
+                if (internalState.power == internalState.C_ON) {
+                    value = false;
+                }
+                else {
+                    value = true;
+                }
+            }
             if (value === internalState.C_ON || value === true) {
                 light.turnOn(function () {
                     queryLampState();
