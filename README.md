@@ -25,6 +25,7 @@ All properties have to be supplied within ```msg.payload``` property as the foll
 ### ```power``` (_boolean_|_string_)
 set ```msg.payload.power```to ```true``` or ```"on"``` to turn the light on.<br>
 set it to ```false``` or ```"off"``` to turn it off.
+set it to ```toggle``` to turn it off when it's on and on when it's off.
 
 ### ```brightness``` (_integer: 0..255_)
 Hint: It doesn't work at the moment and can't be set. Currently it is reflecting the maximum value all colors including white.
