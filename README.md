@@ -24,7 +24,7 @@ Your 2nd option is to install it via npm to the NodeRED user directory by typing
 All properties have to be supplied within ```msg.payload``` property as the following properties:
 ### ```power``` (_boolean_|_string_)
 set ```msg.payload.power```to ```true``` or ```"on"``` to turn the light on.<br>
-set it to ```false``` or ```"off"``` to turn it off.
+set it to ```false``` or ```"off"``` to turn it off.<br>
 set it to ```toggle``` to turn it off when it's on and on when it's off.
 
 ### ```brightness``` (_integer: 0..255_)
